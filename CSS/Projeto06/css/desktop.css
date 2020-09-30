@@ -1,0 +1,236 @@
+/*Topo*/
+header h1{
+    float: left;
+    padding: 20px;
+    font-size: 28px;
+    color: #fff;
+}
+
+header nav{
+    float: right;
+}
+
+header a{
+    float: left;
+    color: #fff;
+    text-decoration: none;
+    padding: 28px 20px;
+    padding-bottom: 24px;
+    border-bottom: 4px solid #1137a8;
+    transition: background-color 0.3s, border-bottom-color 0.3s;
+}
+
+header a:hover{
+    background-color: #2351db;
+    border-bottom-color: #fff;
+}
+
+header select{
+    display: none;
+}
+
+main{
+    width: 990px;
+    margin: 20px auto;
+}
+
+.sobre{
+    overflow: hidden;
+}
+
+.sobre h1{
+    color: #f28d00;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.sobre img{
+    float: left;
+    width: 480px;
+}
+
+.sobre ul{
+    list-style: none;
+    width: 480px;
+    float: right;
+}
+
+.sobre li{
+    background-color: #d8d1d1;
+    display: inline-block;
+    width: 218px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+.sobre p{
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.blog{
+    margin-top: 70px;
+}
+
+.blog h1{
+    color: #f28d00;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.blog p{
+    text-align: center;
+    font-weight: bold;
+}
+
+.blog ul{
+    list-style: none;
+}
+
+.blog img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.blog li{
+    display: inline-block;
+    width: 210px;
+    vertical-align: top;
+}
+
+.blog li:nth-child(2),
+.blog li:nth-child(3),
+.blog li:nth-child(4){
+    margin-left: 10px;
+}
+
+.professores p{
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+
+}
+
+.professores h1{
+    color: #f28d00;
+    font-size: 38px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.professores ul{
+    list-style: none;
+}
+
+.professores img{
+    width: 100%;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.professores li{
+    display: inline-block;
+    width: 210px;
+    vertical-align: top;
+}
+
+.professores li:nth-child(2),
+.professores li:nth-child(3),
+.professores li:nth-child(4){
+    margin-left: 40px;
+}
+
+/*Contato*/
+.contato{
+    padding-top: 80px;
+    overflow: hidden;
+}
+
+.contato h1{
+    color: #f28d00;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.contato iframe{
+    float: left;
+    border: 1px solid rgb(131, 128, 128);
+    border-radius: 10px;
+    width: 470px;
+    height: 329px;
+    margin-top: 10px;
+}
+
+.contato form{
+    float: right;
+    border: 1px solid #6d6a6a;
+    border-radius: 10px;
+    width: 470px;
+    margin-top: 10px;
+}
+
+.contato input[type="text"],
+.contato textarea{
+    width: 436px;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid #6d6a6a;
+}
+
+.contato textarea{
+    height: 100px;
+    resize: none;
+}
+
+.contato input[type="submit"]{
+    padding: 5px 30px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid #d1c6c6;
+}
+
+/*Cursos*/
+.cursos p{
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+
+}
+
+.cursos h1{
+    color: #f28d00;
+    font-size: 38px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.cursos ul{
+    list-style: none;
+}
+
+.cursos img{
+    width: 100%;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.cursos li{
+    display: inline-block;
+    width: 210px;
+    vertical-align: top;
+}
+
+.cursos li:nth-child(2),
+.cursos li:nth-child(3),
+.cursos li:nth-child(4){
+    margin-left: 40px;
+}

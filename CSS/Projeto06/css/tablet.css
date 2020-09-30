@@ -1,0 +1,197 @@
+header h1{
+    text-align: center;
+    font-size: 32px;
+    color: #fff;
+    margin-top: 2%;
+}
+
+header a{
+    color: #fff;
+    text-decoration: none;
+    width: 17%;
+    display: inline-block;
+    text-align: center;
+    font-size: 18px;
+    padding: 4% 1%;
+}
+
+header select{
+    display: none;
+}
+
+main{
+    width: 90%;
+    margin: 20px auto;
+}
+
+.sobre img{
+    display: none;
+}
+
+.sobre h1{
+    color: #f28d00;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.sobre ul{
+    list-style: none;
+}
+
+.sobre li{
+    background-color: #d8d1d1;
+    display: inline-block;
+    width: 45%;
+    padding: 2%;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+.sobre p{
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.blog{
+    margin-top: 70px;
+}
+
+.blog h1{
+    color: #f28d00;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.blog p{
+    text-align: center;
+    font-weight: bold;
+}
+
+.blog ul{
+    list-style: none;
+}
+
+.blog img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.blog li{
+    display: inline-block;
+    width: 49%;
+    text-align: center;
+    margin-bottom: 3%;
+    vertical-align: top;
+}
+
+.professores{
+    margin-top: 70px;
+}
+
+.professores h1{
+    color: #f28d00;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.professores ul{
+    list-style: none;
+}
+
+.professores img{
+    width: 100%;
+}
+
+.professores li{
+    display: inline-block;
+    width: 49%;
+    text-align: center;
+    margin-bottom: 3%;
+    vertical-align: top;
+}
+
+/*Contato*/
+.contato{
+    padding-top: 80px;
+    overflow: hidden;
+}
+
+.contato h1{
+    color: #f28d00;
+    font-size: 38px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.contato iframe{
+    float: left;
+    border: 2px solid rgb(184, 165, 165);
+    border-radius: 15px;
+    width: 90%;
+    height: 330px;
+}
+
+.contato form{
+    margin-top: 30px;
+    float: left;
+    border: 1px solid #6d6a6a;
+    border-radius: 10px;
+    width: 90%;
+}
+
+.contato input[type="text"],
+.contato textarea{
+    width: 436px;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid #6d6a6a;
+}
+
+.contato textarea{
+    height: 100px;
+    resize: none;
+}
+
+.contato input[type="submit"]{
+    padding: 5px 30px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid #6d6a6a;
+}
+
+.cursos{
+    margin-top: 70px;
+}
+
+.cursos h1{
+    color: #f28d00;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.cursos ul{
+    list-style: none;
+}
+
+.cursos img{
+    width: 100%;
+}
+
+.cursos li{
+    display: inline-block;
+    width: 49%;
+    text-align: center;
+    margin-bottom: 3%;
+    vertical-align: top;
+}

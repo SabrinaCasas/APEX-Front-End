@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Conversor de Moedas</title>
+
+    <!-- jQuery -->
+    <script src="jquery-3.4.1.min.js"></script>
+
+    <!-- Máscara -->
+    <script src="jquery.mask.js"></script>
+
+    <!-- Script -->
+    <script>
+        $(document).ready(function () {
+
+            // Máscara
+            $(".dinheiro").mask('000.000.000.000.000,00', { reverse: true });
+
+            // Converter
+            $("#tipo").change(function () {
+                switch ($("#tipo").val()) {
+                    case "Dólar":
+                        var total = parseFloat($(".dinheiro").val()) / 4.28;
+                        $("h1").html("U$ " + total.toFixed(2));
+                        break;
+
+                    case "Euro":
+                        var total = parseFloat($(".dinheiro").val()) / 4.75;
+                        $("h1").html("€ " + total.toFixed(2));
+                        break;
+
+                    case "Libra":
+                        var total = parseFloat($(".dinheiro").val()) / 5.65;
+                        $("h1").html("£ " + total.toFixed(2));
+                        break;
+                }
+            })
+        })
+    </script>
+</head>
+
+<body>
+
+    <input type="text" placeholder="Valor" class="dinheiro">
+    <select id="tipo">
+        <option>Escolha a moeda</option>
+        <option>Dólar</option>
+        <option>Euro</option>
+        <option>Libra</option>
+    </select>
+
+    <h1></h1>
+
+</body>
+
+</html>

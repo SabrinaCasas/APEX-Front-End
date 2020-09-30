@@ -1,0 +1,26 @@
+*{
+    font: 14px sans-serif;
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+}
+
+header{
+    background-color: #1137a8;
+    overflow: hidden;
+}
+
+footer{
+    overflow: hidden;
+    padding: 25px;
+}
+
+footer p{
+    float: left;
+}
+
+footer i{
+    float: right;
+    margin-left: 10px;
+}
+

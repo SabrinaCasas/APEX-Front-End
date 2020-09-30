@@ -1,0 +1,72 @@
+/*Fontes*/
+@font-face{
+    font-family: fonteTitulo;
+    src: url("../fontes/Mogena.ttf");
+}
+
+/*Padrão*/
+*{
+    font: 14px sans-serif;
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+}
+
+/*Body*/
+body{
+    background-image: url("../imagens/fundo.jpg");
+    background-size: cover;
+}
+
+/*Formulário*/ 
+form{
+    background-color: #fff;
+    width: 500px;
+    margin: 50px auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+form h1{
+    text-align: center;
+    font-size: 36px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    font-family: fonteTitulo;
+    letter-spacing: 5px;
+}
+
+form input[type="text"],
+form input[type="password"]{
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    width: 470px;
+    margin-bottom: 40px;
+    transition: border-bottom-color 0.5s;
+}
+
+form input[type="text"]:focus,
+form input[type="password"]:focus{
+    border-bottom-color: #FA01FB;
+}
+
+form input[type="submit"]{
+    background: linear-gradient(to bottom, #fb00ff 22%,#00dcdd 73%,#00dcdd 73%);
+    padding: 10px 50px;
+    color: #fff;
+    border-radius: 10px;
+    margin-left: 160px;
+}
+
+.social{
+    border-top: 1px solid #ccc;
+    margin-top: 40px;
+    padding-top: 20px;
+    text-align: center;
+}
+.social img{
+    width: 50px;
+}
+
+

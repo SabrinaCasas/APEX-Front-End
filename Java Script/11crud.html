@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CRUD</title>
+
+    <!-- Materialize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+
+    <!-- JS -->
+    <script>
+
+        //JSON
+        var cursos = [];
+
+        // Classe Curso
+        class Curso {
+            constructor(curso, categoria, valor) {
+                this.curso = curso;
+                this.categoria = categoria;
+                this.valor = valor;
+            }
+        }
+
+        //Função de cadastro
+        cadastrar = () => {
+            var curso = document.getElementById("campo_curso").value;
+            var categoria = document.getElementById("campo_categoria").value;
+            var valor = document.getElementById("campo_valor").value;
+
+            const obj = new Curso(curso, categoria, valor);
+
+            cursos.push(obj);
+
+            bancoLocal();
+
+            listar();
+        }
+
+        // Função de Listagem
+        listar = () => {
+
+            var tabela = document.getElementById("tabela");
+
+            tabela.innerHTML = "";
+
+            for (var indice = 0; indice < cursos.length; indice++) {
+
+                var linha = tabela.insertRow(-1);
+
+                var coluna1 = linha.insertCell(0);
+                var coluna2 = linha.insertCell(1);
+                var coluna3 = linha.insertCell(2);
+                var coluna4 = linha.insertCell(3);
+                var coluna5 = linha.insertCell(4);
+
+                coluna1.innerHTML = indice + 1;
+                coluna2.innerHTML = cursos[indice].curso;
+                coluna3.innerHTML = cursos[indice].categoria;
+                coluna4.innerHTML = cursos[indice].valor;
+                coluna5.innerHTML = "<button class='btn' Onclick='remover(" + indice + ")'>Remover</button>";
+            }
+        }
+
+        // Função de exclusão
+        remover = (indice) => {
+            cursos.splice(indice, 1);
+
+            bancoLocal();
+
+            listar();
+        }
+
+        // Funcão LocalStorage
+        bancoLocal = () => {
+            localStorage.removeItem("cursos_local");
+            localStorage.setItem("cursos_local", JSON.stringify(cursos));
+        }
+
+        // Verificar cursos salvos localmente
+        verificarBancoLocal = () => {
+            if (localStorage.getItem("cursos_local") !=null) {
+                var temp = JSON.parse(localStorage.getItem("cursos_local"));
+
+                for (var indice = 0; indice < temp.length; indice++) {
+                    var obj = new Curso(temp[indice].curso, temp[indice].categoria, temp[indice].valor);
+                    cursos.push(obj);
+                }
+
+                listar();
+            }
+        }
+
+        //Eventos
+        window.onload = function () {
+            verificarBancoLocal();
+            document.getElementById("botao_cadastrar").addEventListener("click", cadastrar);
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <!-- Formulário -->
+    <div class="row">
+        <div class="col s8 offset-s2">
+
+            <input type="text" id="campo_curso">
+            <label>Curso</label>
+
+            <input type="text" id="campo_categoria">
+            <label>Categoria</label>
+
+            <input type="text" id="campo_valor">
+            <label>Valor</label>
+
+            <br>
+            <button class="btn" id="botao_cadastrar">Cadastrar</button>
+
+        </div>
+    </div>
+
+    <!-- Tabela -->
+    <table>
+        <thead>
+            <tr>
+                <th>Código</th>
+                <th>Curso</th>
+                <th>Categoria</th>
+                <th>Valor</th>
+                <th>Remover</th>
+            </tr>
+        </thead>
+
+        <tbody id="tabela"></tbody>
+    </table>
+
+
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>atividade07</title>
+</head>
+
+<style>
+    p{
+        display: inline-block;
+        width: 300px;
+        border-bottom: 1px solid black;
+        text-align: center;
+        margin-left: 10px;
+    }
+
+    button{
+        width: 300px;
+        border-radius: 10px;
+        height: 40px;
+        margin-left: 10px;
+    }
+
+    h1{
+        text-decoration: underline;
+        text-decoration-color: green;
+        font-size: 40px;
+        text-align: center;
+    }
+
+</style>
+
+<h1>Candidatos ao Cargo de Presidente</h1>
+
+<script>
+
+    //Variáveis
+    var cand1 = 0;
+    var cand2 = 0;
+    var cand3 = 0;
+    var cand4 = 0;
+
+    //Função
+    function incrementarVoto(numero) {
+        if (numero == 1) {
+            cand1++;
+            document.getElementById("exibirVotocand1").innerHTML = "Candidato1 obteve: "+cand1+" votos.";
+        }
+
+        if (numero == 2) {
+            cand2++;
+            document.getElementById("exibirVotocand2").innerHTML = "Candidato2 obteve: "+cand2+" votos.";
+
+        }
+
+        if (numero == 3) {
+            cand3++;
+            document.getElementById("exibirVotocand3").innerHTML = "Candidato3 obteve: "+cand3+" votos.";
+
+        }
+
+        if (numero == 4) {
+            cand4++;
+            document.getElementById("exibirVotocand4").innerHTML = "Candidato4 obteve: "+cand4+" votos.";
+
+        }
+    }
+</script>
+
+<!-- Botões -->
+<button onclick="incrementarVoto(1)">Candidato01</button>
+<button onclick="incrementarVoto(2)">Candidato02</button>
+<button onclick="incrementarVoto(3)">Candidato03</button>
+<button onclick="incrementarVoto(4)">Candidato04</button>
+
+<br>
+<p id="exibirVotocand1"></p>
+<p id="exibirVotocand2"></p>
+<p id="exibirVotocand3"></p>
+<p id="exibirVotocand4"></p>
+
+
+<body>
+
+</body>
+
+</html>

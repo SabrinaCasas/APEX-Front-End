@@ -1,0 +1,183 @@
+/*Fontes*/
+@font-face{
+    font-family: fonteTitulo;
+    src: url("../fontes/Amarillo.ttf");
+}
+
+@font-face{
+    font-family: segundaFonte;
+    src: url("../fontes/CaviarDreams_BoldItalic.ttf");
+}
+ 
+/*Padrão*/
+*{
+    font: 14px sans-serif;
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+}
+
+/*Fundo*/
+body{
+    background-image: url("../banner/2.jpg");
+    background-size: cover;
+}
+
+/* Cabeçalho */
+header{
+    background-color: rgba(172, 163, 163, 0.1);
+    overflow: hidden;
+    box-shadow: 0px 1px 10px #000;
+}
+
+/*Topo*/
+header h1{
+    color: #000000;
+    font-family: fonteTitulo;
+    font-size: 40px;
+    padding: 10px;
+    text-align: left;
+    float: left;
+}
+
+section h1{
+    color: #000000;
+    font-family: segundaFonte;
+    font-size: 50px;
+    padding: 50px;
+    width: 50%;
+    margin-top: 15%;
+    margin-left: 8%;
+    text-shadow: 3px 3px 3px rgb(250, 243, 243);
+}
+
+header nav{
+    float: right;
+    margin-top: 45px;
+}
+
+header a{
+    color: rgb(0, 0, 0);
+    font-family: fonteTitulo;
+    font-size: 12px;
+    text-decoration: none;
+    margin-right: 60px;
+}
+
+/* Nossos Chef's */
+.Chef{
+    width: 990px;
+    margin: 0 auto;
+}
+
+.Chef h1{
+    text-align: center;
+    font-family: fonteTitulo;
+    font-size: 40px;
+    padding: 10px;
+    margin-top: 0px;
+}
+
+.Chef img{
+    width: 150px;
+    border-radius: 40px;
+    display: inline-block;
+    margin-bottom: 6px;
+}
+
+.Chef li{
+    width: 280px;
+    padding: 10px;
+    display: inline-block;
+    border: 1px solid rgb(77, 72, 72);
+    border-radius: 15px;
+    text-align: center;
+    color: #fffdfd;
+}
+
+.Chef li:nth-child(2){
+    margin: 0px 30px;
+}
+
+.Chef p:nth-child(1){
+    text-align: justify;
+    line-height: 19px;
+    text-indent: 15px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-family: segundaFonte;
+}
+
+/*Cardápio*/
+.Cardápio{
+    text-align: center;
+    padding-top: 30px;
+    font-family: segundaFonte;
+}
+
+.Cardápio h1{
+    font-size: 50px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    display: inline-block;
+    padding: 10px 60px;
+}
+
+.Cardápio ul{
+    margin-top: 40px;
+    width: 990px;
+    margin: 10px auto;
+}
+
+.Cardápio li{
+    display: inline-block;
+    width: 450px;
+}
+
+.Cardápio img{
+    width: 80%;
+    border-radius: 15px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.Cardápio h2{
+    color: white;
+    font-family: fonteTitulo;
+    font-size: 16px;
+    text-align: center;
+    line-height: 20px;
+    padding: 15px;
+    padding-top: 0px;;
+}
+
+.Cardápio p{
+    color: black;
+    font-family: segundaFonte;
+    font-size: 16px;
+    text-align: center;
+    line-height: 20px;
+    padding: 10px;
+    padding-top: 0px;
+    margin-bottom: 10px;
+}
+
+/* Rodapé */
+footer{
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 14px;
+    text-align: center;
+}
+footer p{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+} 
+
+
+
+
+
+
+

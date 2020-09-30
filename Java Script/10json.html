@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JSON</title>
+
+    <script>
+    
+        // classe Curso
+        class Curso{
+
+            constructor(nome, categoria, valor){
+                this. nome = nome;
+                this.categoria = categoria;
+                this.valor = valor;
+            }
+        }
+
+        // Criar objetos
+        const curso1 = new Curso("Angular", "Front-End", 1800);
+        const curso2 = new Curso("Java", "Back-End", 2400);
+        const curso3 = new Curso("C#", "Back-End", 2100);
+        const curso4 = new Curso("React", "Fron-End", 1600);
+        const curso5 = new Curso("TypeScript", "Front-End", 1200);
+
+        //JSON
+        var cursos = [];
+        cursos.push(curso1);
+        cursos.push(curso2);
+        cursos.push(curso3);
+        cursos.push(curso4);
+        cursos.push(curso5);
+
+        //Exibir JSON
+        console.table(cursos);
+        
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

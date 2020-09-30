@@ -1,0 +1,84 @@
+/*Fontes*/
+@font-face{
+    font-family: fonteTitulo;
+    src: url("../fontes/Deutsch.ttf");
+}
+
+/* Padrão */
+*{
+    font: 14px sans-serif;
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+}
+
+/* Fundo */
+body{
+    background-image: url("../imagens/fundo.jpg");
+    background-size: cover;
+}
+
+/* Formulário */
+form{
+    background-color: #F7F7F7;
+    width: 700px;
+    margin: 50px auto;
+    text-align: center;
+    border-radius: 5px;
+}
+
+form h1{
+    color: #423636;
+    font-family: fonteTitulo;
+    font-size: 40px;
+    padding: 40px;
+}
+
+form p{
+    display: inline-block;
+    border-radius: 8px;
+    padding: 20px 90px;
+    border: 1px solid rgb(201, 190, 190);
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+.facebook{
+    background-color: #213774;
+    color: #fff;
+    margin-right: 30px; 
+}
+
+form label{
+    display: block;
+    text-align: left;
+    color: #959595;
+    margin-left: 90px;
+    margin-bottom: 10px;
+}
+
+form input[type="text"],
+form input[type="password"]{
+    border: 2px solid rgb(168, 148, 148);
+    border-radius: 5px;
+    padding: 20px;
+    width: 480px;
+    margin-bottom: 30px;
+    background-color: #F7F7F7;
+    transition: border-bottom-color 0.5s;
+}
+
+form input[type="text"]:focus,
+form input[type="password"]:focus{
+    border-bottom-color: rgb(7, 7, 7);
+}
+
+form input[type="submit"]{
+    border: 2px solid rgb(219, 219, 219);
+    border-radius: 6px;
+    padding: 20px;
+    width: 520px;
+    margin-bottom: 30px;
+    background-color: rgb(32, 31, 31);
+    color: #fff;
+}

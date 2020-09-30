@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tabela</title>
+
+    <!-- JS -->
+    <script>
+        //Lista
+        var dados = [
+            {"codigo":01, "nome":"Ralf", "email":"ralf.lima@gmail.com"},
+            {"codigo":02, "nome":"Stella", "email":"stella.linz@yahoo.com"},
+            {"codigo":03, "nome":"Renê", "email":"rene_passos@gmail.com"},
+            {"codigo":04, "nome":"Jaison", "email":"jaison.fraiburg@uol.com"},
+            {"codigo":05, "nome":"Stephanie", "email":"steh.lima@live.com"},
+            {"codigo":06, "nome":"Carla", "email":"carla.oliveira@gmail.com"},
+        ];
+
+        //Ao carregar
+        window.onload = function(){
+            
+            //Obter a tabela
+            var tabela = document.getElementById("tabela");
+
+            //Laço
+            for(var indice=0; indice<dados.length; indice++){
+
+                //Criar uma nova linha
+                var linha = tabela.insertRow();
+
+                //Criar colunas
+                var colunaCodigo = linha.insertCell(0);
+                var colunaNome = linha.insertCell(1);
+                var colunaEmail = linha.insertCell(2);
+
+                //Atribuir dados
+                colunaCodigo.innerHTML = dados[indice].codigo;
+                colunaNome.innerHTML = dados[indice].nome;
+                colunaEmail.innerHTML = dados[indice].email;
+            }
+        }
+    </script>
+    
+    <!-- CSS -->
+    <style>
+            table{
+                width: 500px;
+                background-color: black;
+                color: #fff;
+                margin: 0 auto;
+            }
+    
+            tbody tr:nth-child(odd){
+                background-color: gray;
+            }
+    
+            tbody tr:nth-child(even){
+                background-color: white;
+                color: black;
+            }
+        </style>
+</head>
+
+<body>
+   
+<table border="1">
+    <thead>
+        <tr>
+            <th>Código</th>
+            <th>Nome</th>
+            <th>E-mail</th>
+        </tr>
+    </thead>
+
+    <tbody id="tabela">
+    <!-- <tr>
+        <td>01</td>
+        <td>Sabrina</td>
+        <td>sabrynacasas@yahoo.com</td>
+    </tr> -->
+</tbody>
+
+
+</table>
+
+</body>
+</html>

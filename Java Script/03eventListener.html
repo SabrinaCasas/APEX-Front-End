@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EventListener</title>
+
+    <script>
+        // Função
+        function mensagem(){
+            alert("Hello World!");
+        }
+
+        // Ao carregar a página
+        window.onload = function(){
+        document.getElementsByTagName("button")[0].addEventListener("click", mensagem);
+        }
+    </script>
+
+</head>
+<body>
+    <button>Clique aqui</button>
+</body>
+</html>

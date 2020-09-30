@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Filter</title>
+
+    <script>
+        
+        // Vetor
+        var idades = [17, 25, 36, 9, 22];
+
+        //Funcao
+        retornaMaiorIdade = (idade) => {
+            return idade >= 18;
+        }
+
+        // Filtrar idades
+        var filtragem = idades.filter(retornaMaiorIdade);
+        //for(var indice=0; indice <idades.length; indice++){
+        //     if(idadea[indice] < 18){
+        //           idades.splice(indice, 1);
+        //       }
+        //}
+
+        console.log (filtragem);
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

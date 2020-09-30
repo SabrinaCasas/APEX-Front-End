@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tabuada</title>
+</head>
+
+<script>
+
+    function tabuada() {
+        //Numero
+        var numero = document.getElementById("numero").value;
+
+        for (indice = 0; indice <= 10; indice++) {
+            document.getElementById("resultado").innerHTML +=(numero+"X"+indice+"="+(numero*indice)+"<br>");
+        }
+    }
+    
+</script>
+
+
+<body>
+    <input type="text" id="numero">
+    <button onclick="tabuada()">Calcular</button>
+
+    <div id="resultado"></div>
+</body>
+
+</html>

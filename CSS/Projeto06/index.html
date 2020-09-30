@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Projeto 06</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/mobile.css" media="(max-width: 500px)">
+    <link rel="stylesheet" href="css/tablet.css" media="(min-width: 501px) and (max-width: 900px)">
+    <link rel="stylesheet" href="css/desktop.css" media="(min-width: 901px)">
+
+    <!-- Fotorama -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+
+    <!-- Ícones -->
+    <link rel="stylesheet" href="../Projeto06/fontawesome/css/all.css">
+
+    <!-- Link do menu mobile -->
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <!-- Topo -->
+    <header>
+        <h1>Apex Ensino</h1>
+
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="professores.html">Professores</a>
+            <a href="blog.html">Blog</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+
+        <select onchange="pagina(this.value)">
+            <option>Menu</option>
+            <option>Início</option>
+            <option>Sobre</option>
+            <option>Professores</option>
+            <option>Blog</option>
+            <option>Contato</option>
+        </select>
+    </header>
+
+    <!-- Banner -->
+    <section class="fotorama"  data-autoplay="3000">
+        <img src="imagens/banner01.jpg">
+        <img src="imagens/banner03.jpg">
+    </section>
+
+    <!-- Sobre -->
+    <main>
+        <section class="sobre">
+            <h1>Sobre a Apex</h1>
+
+            <img src="../Projeto06/imagens/o_que_oferecemos.jpg">
+
+            <ul>
+                <li>
+                    <i class="fas fa-graduation-cap fa-7x"></i>
+                    <p>Professores de mercado</p>
+                </li>
+
+                <li>
+                    <i class="fas fa-user-graduate fa-7x"></i>
+                    <p>Alunos preparados para a área de TI</p>
+                </li>
+
+                <li>
+                    <i class="fas fa-keyboard fa-7x"></i>
+                    <p>Tecnologias de ponta</p>
+                </li>
+            
+                <li>
+                    <i class="fas fa-chalkboard-teacher fa-7x"></i>
+                    <p>Aulas presenciais</p>
+                </li>
+
+            </ul>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>Copyright 2019 - Todos os direitos reservados</p>
+        
+        <i class="fab fa-twitter-square fa-lg"></i>
+        <i class="fab fa-instagram fa-lg"></i>
+        <i class="fab fa-facebook-square fa-lg"></i>
+    </footer>
+        
+</body>
+</html>

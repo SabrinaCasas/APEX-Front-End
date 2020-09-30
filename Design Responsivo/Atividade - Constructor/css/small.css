@@ -1,0 +1,61 @@
+main{
+    margin-top: 30px;
+}
+
+.sobre p{
+    margin-top: 30px;
+    text-align: justify;
+    line-height: 26px;
+}
+
+.sobre h1{
+    text-align: center;
+}
+
+.obras{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.obras img{
+    margin-top: 20px;
+}
+
+.comentarios h1{
+    text-align: center;
+}
+
+.comentarios{
+    margin-top: 40px;
+}
+
+.comentarios .card{
+    margin-top: 30px;
+}
+
+.comentarios .card img{
+    width: 110px;
+    margin: 20px auto;
+}
+
+.comentarios .card p{
+    text-align: justify;
+    margin: 20px;
+}
+
+footer{
+    background-color: #343a34;
+    text-align: center;
+    font-size: 12px;
+    padding: 10px;
+    color: #fff;
+    margin-top: 50px;
+}
+
+footer p{
+    margin: auto;
+}
+
+.modal-content{
+    border-radius: 40px;
+}

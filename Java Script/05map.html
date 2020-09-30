@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Map</title>
+
+    <script>
+
+        // Vetor de números
+        numeros = [100, 150, 500, 50];
+        nomes= ["Alice", "Bruno", "Carla", "Daniel"];
+
+        /* For
+        for(var indice=0; indice<numeros.length; inidice++){
+            numeros[indice] = Match.sqrt(numero[indice]);
+        }*/
+
+        // Map
+        var numeros = numeros.map(Math.sqrt);
+        var nomes = nomes.map((nome) => {
+            return "O nome: "+nome+" possui "+nome.length+" letras.";
+        });
+
+        console.log(numeros);
+        console.log(nomes);
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

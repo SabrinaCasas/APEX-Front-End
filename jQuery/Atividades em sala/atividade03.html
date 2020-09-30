@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculo IMC</title>
+
+    <!-- jQuery -->
+    <script src="jquery-3.4.1.min.js"></script>
+
+    <!-- Máscara -->
+    <script src="jquery.mask.js"></script>
+
+
+    <script>
+
+        //Obter peso e altura
+        var peso = prompt("Informe seu peso");
+        var altura = prompt("Informe sua altura");
+
+        //Cáculo de imc
+        var imc = peso / (altura * altura);
+
+        //Situação
+        var situação = "Muito abaixo do peso";
+         if (imc <= 18,5) {
+            situação = "Abaixo do peso";
+        } else if (imc <= 25) {
+            situação = "Peso normal";
+        } else if (imc <= 30) {
+            situação = "Acima do peso";
+        } else if (imc > 30) {
+            situação = "Obesidade"
+        }
+
+        //Mensagem
+        alert(" O IMC é de: " + imc.toFixed(2) + " sua situação é: " + situação);
+
+
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

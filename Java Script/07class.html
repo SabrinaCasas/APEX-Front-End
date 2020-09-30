@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Class</title>
+
+    <script>
+
+        //Classe
+        class Cliente{
+
+            // Construtor padrão
+            //constructor(){
+            //document.write("classe incializada");
+           // }
+
+           constructor(nome, idade){
+               this.nome = nome;
+               this. idade = idade;
+           }
+
+           verificarIdade(){
+              var condicao = "Menor de idade";
+
+               if(this.idade >= 18){
+                 condicao = "Maior de idade";
+               }
+
+               return condicao;
+           }
+        }
+
+        //Objeto
+        const obj1 = new Cliente("Ralf", 29);
+        console.log(obj1.verificarIdade());
+        const obj2 = new Cliente("James", 33);
+        console.log(obj2.verificarIdade());
+        const obj3 = new Cliente("Cintia", 16);
+        console.log(obj3.verificarIdade());
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
